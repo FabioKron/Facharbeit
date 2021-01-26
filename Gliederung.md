@@ -19,5 +19,10 @@
         4.3. Analyse des Arbeitsspeichers mit sys.getsizeof
 
 ## Hauptteil
+    1. Begriffsdefinitionen
+
+    2. Theorethische Grundlagen
+
+    3. Vergleich von Anwendungsfällen
 
 ## Fazit
