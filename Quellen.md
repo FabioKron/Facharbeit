@@ -16,3 +16,8 @@
 
 -  Array manipulation routines:
         https://numpy.org/doc/stable/reference/routines.array-manipulation.html
+
+## scipy.org Dokumentation Arrays
+
+- 400 Seiten Dokumentation zu Arrays ( Strg + F benutzen z.B. memory)
+    https://docs.scipy.org/doc/numpy-1.17.0/numpy-ref-1.17.0.pdf
