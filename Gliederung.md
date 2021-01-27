@@ -11,6 +11,8 @@
 
         3.2. Nur begrenzte Anzahl von Anwendungsfällen (Warum?)
 
+        3.3. Nur cPython
+
     4. Vorgehensweise
         4.1. Große Mengen an Zahlen
 
