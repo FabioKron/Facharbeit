@@ -23,7 +23,10 @@
 ## Hauptteil
     1. Begriffsdefinitionen
 
-    2. Theorethische Grundlagen
+    2. Theorethische Grundlagen    
+        2.1. Einführung von Listen
+
+        2.2. Einführung von Arrays
 
     3. Vergleich von Anwendungsfällen
 
