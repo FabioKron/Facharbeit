@@ -13,6 +13,10 @@
 
         3.3. Nur cPython
 
+        3.4. Abgrenzung Betriebssystem
+
+        3.5. Abgrenzung Hardware
+
     4. Vorgehensweise
         4.1. Große Mengen an Zahlen
 
