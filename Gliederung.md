@@ -17,21 +17,21 @@
 
         3.5. Abgrenzung Hardware
 
-    4. Vorgehensweise
+## Hauptteil
+    4. Begriffsdefinitionen
+
+    5. Theorethische Grundlagen    
+        2.1. Einführung von Listen
+
+        2.2. Einführung von Arrays
+
+    6. Vorgehensweise
         4.1. Große Mengen an Zahlen
 
         4.2. Test auf Laufzeit mit dem Modul Time/cprofile
 
         4.3. Analyse des Arbeitsspeichers mit sys.getsizeof
 
-## Hauptteil
-    1. Begriffsdefinitionen
-
-    2. Theorethische Grundlagen    
-        2.1. Einführung von Listen
-
-        2.2. Einführung von Arrays
-
-    3. Vergleich von Anwendungsfällen
+    7. Vergleich von Anwendungsfällen
 
 ## Fazit
