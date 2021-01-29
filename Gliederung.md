@@ -20,10 +20,8 @@
 ## Hauptteil
     4. Begriffsdefinitionen
 
-    5. Theorethische Grundlagen    
-        2.1. Einführung von Listen
-
-        2.2. Einführung von Arrays
+    5. Grundlagen    
+        2.1. Einführung der Anwendungsbeispiele
 
     6. Vorgehensweise
         4.1. Große Mengen an Zahlen
