@@ -7,4 +7,5 @@ with open(str(sys.argv[1]), "r") as file:
 
 # Umwandeln der Daten zu Liste
 file_data = file_data.split("\n")
-file_data = [row.split(",") for row in file_data]
+file_data = [row.split(",") for row in file_data if row]
+
