@@ -9,3 +9,6 @@ with open(str(sys.argv[1]), "r") as file:
 file_data = file_data.split("\n")
 file_data = [row.split(",") for row in file_data if row]
 
+iterations = [int(row[0]) for row in file_data[1:]]
+memory_list = [int(row[1]) for row in file_data[1:]]
+memory_array = [int(row[2]) for row in file_data[1:]]
