@@ -15,7 +15,9 @@ memory_list = [int(row[1]) for row in file_data[1:]]
 memory_array = [int(row[2]) for row in file_data[1:]]
 
 # Grafische Darstellung der Listen
-plt.plot(iterations, memory_list)
-plt.plot(iterations, memory_array)
+liste, = plt.plot(iterations, memory_list, label="Liste")
+array, = plt.plot(iterations, memory_array, label="Array")
+
+plt.legend((liste, array), ("Liste", "Array"))
 
 plt.show()
