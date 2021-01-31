@@ -31,5 +31,12 @@
         6.3. Analyse des Arbeitsspeichers mit sys.getsizeof
 
     7. Vergleich von Anwendungsfällen
+        7.1. Zugriff
+
+        7.2. Suchen
+
+        7.3. Einfügen
+
+        7.4. Löschen
 
 ## Fazit
