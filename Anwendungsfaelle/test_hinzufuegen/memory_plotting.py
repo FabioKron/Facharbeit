@@ -18,6 +18,8 @@ memory_array = [int(row[2]) for row in file_data[1:]]
 liste, = plt.plot(iterations, memory_list, label="Liste")
 array, = plt.plot(iterations, memory_array, label="Array")
 
+plt.margins(0)
+
 plt.title("Speicherbelegung nach Anzahl der Ausführungen")
 plt.xlabel("Anzahl der Ausführungen")
 plt.ylabel("Speicherbelegung in Bytes")
