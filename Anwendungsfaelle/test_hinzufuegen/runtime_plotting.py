@@ -18,6 +18,8 @@ runtime_array = [float(row[4]) for row in file_data[1:]]
 liste, = plt.plot(iterations, runtime_list)
 array, = plt.plot(iterations, runtime_array)
 
+plt.margins(0)
+
 plt.title("Laufzeit nach Anzahl der Ausführungen")
 plt.xlabel("Anzahl der Ausführungen")
 plt.ylabel("Laufzeit in Sekunden")
