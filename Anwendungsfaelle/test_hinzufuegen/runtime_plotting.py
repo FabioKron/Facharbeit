@@ -15,7 +15,9 @@ runtime_list = [float(row[3]) for row in file_data[1:]]
 runtime_array = [float(row[4]) for row in file_data[1:]]
 
 # Grafische Darstellung der Listen
-plt.plot(iterations, runtime_list)
-plt.plot(iterations, runtime_array)
+liste, = plt.plot(iterations, runtime_list)
+array, = plt.plot(iterations, runtime_array)
+
+plt.legend((liste, array), ("Liste", "Array"))
 
 plt.show()
