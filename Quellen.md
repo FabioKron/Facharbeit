@@ -29,4 +29,5 @@
 - Grundlegendes Tutorial zu matplotlib:
     https://www.w3schools.com/python/matplotlib_intro.asp
 
-    
+## matplotlib.org Dokumentation matplotlib
+- https://matplotlib.org/contents.html
