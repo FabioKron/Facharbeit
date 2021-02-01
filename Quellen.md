@@ -21,3 +21,12 @@
 
 - 400 Seiten Dokumentation zu Arrays ( Strg + F benutzen z.B. memory)
     https://docs.scipy.org/doc/numpy-1.17.0/numpy-ref-1.17.0.pdf
+
+---
+
+## w3schools.com Tutorial matplotlib
+
+- Grundlegendes Tutorial zu matplotlib:
+    https://www.w3schools.com/python/matplotlib_intro.asp
+
+    
