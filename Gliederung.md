@@ -32,11 +32,13 @@
 
     7. Vergleich von Anwendungsfällen
         7.1. Zugriff
-
+            -Interpretation
         7.2. Suchen
 
         7.3. Einfügen
 
         7.4. Löschen
+
+    -Interpretation
 
 ## Fazit
