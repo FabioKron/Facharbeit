@@ -22,10 +22,16 @@ if __name__ == '__main__':
     array_time = 0
     list_time = 0
 
-    # Zählvariable, wird benötigt um alle 10000 Elemente zu speichern
+    # Festlegen der Anzahl der Durchläufe
+    if len(sys.argv) > 2:
+        iterations = sys.argv[2]
+    else:
+        iterations = 10000
+
+    # Zählvariable, wird benötigt um alle Elemente zu speichern
     i = 0
 
-    while True:
+    while i < iterations:
         zahl = random.random()
 
         start_of_next_array_timeframe = time.time()
@@ -38,8 +44,8 @@ if __name__ == '__main__':
 
         i += 1
 
-        if not i % 10000:
-            with open(filename, "a") as file:
-                file.write(",".join([str(i), str(sys.getsizeof(liste)), str(sys.getsizeof(array)), str(list_time), str(array_time)])+"\n")
-                print("Status für", i, " Elemente gespeichert.")
+        # Speichern der Messwerte in der Datei
+        with open(filename, "a") as file:
+            file.write(",".join([str(i), str(sys.getsizeof(liste)), str(sys.getsizeof(array)), str(list_time), str(array_time)])+"\n")
+            print("Status für", i, " Elemente gespeichert.")
 
