@@ -20,25 +20,35 @@
 ## Hauptteil
     4. Begriffsdefinitionen
 
-    5. Grundlagen    
-        5.1. Einführung der Anwendungsbeispiele
+    5. 
 
     6. Vorgehensweise
-        6.1. Große Mengen an Zahlen
+        6.1. Auswählen des Anwendungsbeispiels
 
-        6.2. Test auf Laufzeit mit dem Modul Time/cprofile
+        6.2. Erklären von Grundlagen für das jeweilige Beispiel
 
-        6.3. Analyse des Arbeitsspeichers mit sys.getsizeof
+        6.3. Anwendungsbeispiel implementieren
+
+        6.4. Anwendungsbeispiel in Tracking-Umgebung einbetten
+            - Zeit (time.time())
+            - Speicher (sys.getsizeof())
+
+            - viele Daten
+
+        6.5. Testdaten sammeln
+
+        6.6. Testdaten analysieren
+
+        6.7. Testdaten interpretieren
 
     7. Vergleich von Anwendungsfällen
         7.1. Zugriff
-            -Interpretation
+
         7.2. Suchen
 
         7.3. Einfügen
 
         7.4. Löschen
 
-    -Interpretation
 
 ## Fazit
