@@ -24,7 +24,7 @@ if __name__ == '__main__':
 
     # Festlegen der Anzahl der Durchläufe
     if len(sys.argv) > 2:
-        iterations = sys.argv[2]
+        iterations = int(sys.argv[2])
     else:
         iterations = 10000
 
