@@ -45,7 +45,7 @@
 
         2. Suchen
 
-        3. Einfügen
+        3. Anhängen
 
         4. Löschen
 
