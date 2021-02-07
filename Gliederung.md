@@ -30,19 +30,17 @@
 
         2. Erklären von Grundlagen für das jeweilige Beispiel
 
-        3. Anwendungsbeispiel implementieren
-
-        4. Anwendungsbeispiel in Tracking-Umgebung einbetten
+        3. Anwendungsbeispiel Anwendungsbeispiel implementieren und in Tracking-Umgebung einbetten
             - Zeit (time.time())
             - Speicher (sys.getsizeof())
 
             - viele Daten
 
-        5. Testdaten sammeln
+        4. Testdaten sammeln
 
-        6. Testdaten analysieren
+        5. Testdaten analysieren
 
-        7. Testdaten interpretieren
+        6. Testdaten interpretieren
 
 ## Vergleich von Anwendungsfällen
         1. Zugriff

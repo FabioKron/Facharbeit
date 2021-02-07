@@ -16,12 +16,10 @@
 
 
 
-3. Anwendungsbeispiel implementieren
+3. Anwendungsbeispiel implementieren und in Tracking-Umgebung einbetten
 
-4. Anwendungsbeispiel in Tracking-Umgebung einbetten
+4. Testdaten sammeln
 
-5. Testdaten sammeln
+5. Testdaten analysieren
 
-6. Testdaten analysieren
-
-7. Testdaten interpretieren
+6. Testdaten interpretieren
