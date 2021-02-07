@@ -18,6 +18,8 @@
 
         5. Abgrenzung Hardware
 
+        6. Abgrenzung nur eine Dimension/Achse
+
 ## Begriffsdefinitionen
  
 
