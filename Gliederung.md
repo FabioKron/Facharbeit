@@ -21,7 +21,9 @@
         6. Abgrenzung nur eine Dimension/Achse
 
 ## Begriffsdefinitionen
- 
+        1. Array -> Array des Moduls Numpy
+
+        2. Liste -> normale Liste Python
 
 ## Vorgehensweise
         1. Auswählen des Anwendungsbeispiels
