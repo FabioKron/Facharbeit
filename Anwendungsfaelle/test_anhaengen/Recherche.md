@@ -20,3 +20,13 @@ https://github.com/python/cpython/blob/master/Objects/listobject.c
 8.2.2021/8:30
 
 ---
+
+**Python Docs How are lists implemented in CPython?**
+
+Es wird kurz darauf eingegangen, dass bei Listen Speicher für die Liste freigehalten wird.
+
+https://docs.python.org/3/faq/design.html#how-are-lists-implemented
+
+8.2.2021/ 9:19
+
+---
