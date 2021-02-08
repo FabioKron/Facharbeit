@@ -30,3 +30,13 @@ https://docs.python.org/3/faq/design.html#how-are-lists-implemented
 8.2.2021/ 9:19
 
 ---
+
+**Python Wiki TimeComplexity**
+
+Es wird auf die Zeitkomplexität von Methoden von Listen eingegangen.
+
+https://wiki.python.org/moin/TimeComplexity
+
+8.2.2021/ 9:24
+
+---
