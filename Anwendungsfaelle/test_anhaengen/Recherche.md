@@ -40,3 +40,14 @@ https://wiki.python.org/moin/TimeComplexity
 8.2.2021/ 9:24
 
 ---
+
+**Why is np.append so slow?**
+
+Diskussion auf Github über Numpy.append und List.append.
+Es unter anderem erklärt, wie die jeweilige Methode funktioniert.
+
+https://github.com/numpy/numpy/issues/17090
+
+8.2.2021/ 9:28
+
+---
