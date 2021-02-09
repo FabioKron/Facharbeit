@@ -51,3 +51,13 @@ https://github.com/numpy/numpy/issues/17090
 8.2.2021/ 9:28
 
 ---
+
+**Numpy Dokumentation numpy.append**
+
+Es wird erwähnt, dass beim anhängen von Elementen der Array an eine andere Stelle im Speicher verschoben wird und erst dort das neue Element angehängt wird.
+
+https://numpy.org/doc/stable/reference/generated/numpy.append.html#numpy.append
+
+9.2.2021/ 8:35
+
+---
