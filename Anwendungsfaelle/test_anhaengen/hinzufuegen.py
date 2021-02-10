@@ -31,6 +31,8 @@ else:
 i = 0
 
 while i < iterations:
+    i += 1
+
     randomNumber = random.random()
 
     start_of_next_array_timeframe = time.time()
@@ -40,8 +42,6 @@ while i < iterations:
     start_of_next_list_timeframe = time.time()
     list_to_track.append(randomNumber)
     list_time += time.time() - start_of_next_list_timeframe
-
-    i += 1
 
     # Speichern der Messwerte in der Datei
     with open(filename, "a") as file:
