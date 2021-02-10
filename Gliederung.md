@@ -36,12 +36,12 @@
                 4. Löschen
 
         2. Testsystem
+                - Laufzeit bestimmen -> time.time
+                - Speicher bestimmen -> sys.getsizeof
+
+                - viele Wiederholungen
 
         3. Anwendungsbeispiel Anwendungsbeispiel implementieren und in Tracking-Umgebung einbetten
-            - Zeit (time.time())
-            - Speicher (sys.getsizeof())
-
-            - viele Daten
 
         4. Testdaten sammeln
 
