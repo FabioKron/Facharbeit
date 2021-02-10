@@ -25,10 +25,17 @@
 
         2. Liste -> normale Liste Python
 
-## Vorgehensweise
-        1. Auswählen des Anwendungsbeispiels
+## Analysieren der Anwendungsfälle
+        1. Auswählen des Anwendungsbeispiels und Erklären von Grundlagen für das jeweilige Beispiel
+                1. Zugriff
 
-        2. Erklären von Grundlagen für das jeweilige Beispiel
+                2. Suchen
+
+                3. Anhängen
+
+                4. Löschen
+
+        2. Testsystem
 
         3. Anwendungsbeispiel Anwendungsbeispiel implementieren und in Tracking-Umgebung einbetten
             - Zeit (time.time())
@@ -41,15 +48,6 @@
         5. Testdaten analysieren
 
         6. Testdaten interpretieren
-
-## Vergleich von Anwendungsfällen
-        1. Zugriff
-
-        2. Suchen
-
-        3. Anhängen
-
-        4. Löschen
 
 
 ## Fazit
