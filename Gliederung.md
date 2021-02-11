@@ -6,14 +6,6 @@
 
 ## Bedeutung des Themas
     
-
-## Abgrenzung
-        1. Nur Floats -> Konstante Größe im Speicher (Quelle?)
-
-        2. Nur begrenzte Anzahl von Anwendungsfällen (Warum?)
-
-        3. Abgrenzung nur eine Dimension/Achse
-
 ## Einflüsse von Hard- und Software
         1. Betriebssystem -> Ubuntu
 
@@ -25,6 +17,16 @@
         1. Array -> Array des Moduls Numpy
 
         2. Liste -> normale Liste Python
+
+## Einfluss des jeweiligen Anwendungsfalls
+        1. Datentyp
+                -> Konstante/Dynamische Größe -> Float (Zahlen)
+
+        2. Anzahl an Dimensionen/Achsen (+ variabel...)
+
+        2. Aktion, die ausgeführt wird
+                -> unterschiedliche Implementierung
+                -> begrenzte Anzahl an Anwendungsfällen
 
 ## Analysieren der Anwendungsfälle
         1. Auswählen des Anwendungsbeispiels und Erklären von Grundlagen für das jeweilige Beispiel
