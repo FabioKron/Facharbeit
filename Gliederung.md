@@ -35,13 +35,13 @@
 
                 4. Löschen
 
-        2. Messumgebung
+        2. Algorithmus zum Dokumentieren der Laufzeit und des belegten Speichers
                 - Laufzeit bestimmen -> time.time
                 - Speicher bestimmen -> sys.getsizeof
 
                 - viele Wiederholungen
 
-        3. Anwendungsbeispiel Anwendungsbeispiel implementieren und in Tracking-Umgebung einbetten
+        3. Anwendungsbeispiel in Algorithmus zum Dokumentieren der Laufzeit und des belegten Speichers implementieren
 
         4. Testdaten sammeln
 
