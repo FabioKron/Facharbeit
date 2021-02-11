@@ -5,7 +5,12 @@
 
 
 ## Bedeutung des Themas
-    
+
+
+## Grundlagen zu Listen und Arrays
+        1. Datentyp
+                -> Konstante/Dynamische Größe -> Float (Zahlen)
+
 ## Einflüsse von Hard- und Software
         1. Betriebssystem -> Ubuntu
 
@@ -18,13 +23,6 @@
 
         2. Liste -> normale Liste Python
 
-## Einfluss des jeweiligen Anwendungsfalls
-        1. Datentyp
-                -> Konstante/Dynamische Größe -> Float (Zahlen)
-
-        2. Aktion, die ausgeführt wird
-                -> unterschiedliche Implementierung
-                -> begrenzte Anzahl an Anwendungsfällen
 
 ## Analysieren der Anwendungsfälle
         1. Auswählen des Anwendungsbeispiels und Erklären von Grundlagen für das jeweilige Beispiel
