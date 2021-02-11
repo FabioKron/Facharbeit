@@ -12,13 +12,14 @@
 
         2. Nur begrenzte Anzahl von Anwendungsfällen (Warum?)
 
-        3. Nur cPython
+        3. Abgrenzung nur eine Dimension/Achse
 
-        4. Abgrenzung Betriebssystem
+## Einflüsse von Hard- und Software
+        1. Betriebssystem -> Ubuntu
 
-        5. Abgrenzung Hardware
+        2. Hardware -> VM
 
-        6. Abgrenzung nur eine Dimension/Achse
+        3. Interpreter -> cPython
 
 ## Begriffsdefinitionen
         1. Array -> Array des Moduls Numpy
