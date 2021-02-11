@@ -22,8 +22,6 @@
         1. Datentyp
                 -> Konstante/Dynamische Größe -> Float (Zahlen)
 
-        2. Anzahl an Dimensionen/Achsen (+ variabel...)
-
         2. Aktion, die ausgeführt wird
                 -> unterschiedliche Implementierung
                 -> begrenzte Anzahl an Anwendungsfällen
