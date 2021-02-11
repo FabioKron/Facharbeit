@@ -15,7 +15,7 @@ with open(filename, "a") as file:
 
 # Erstellen der Liste und des Arrays
 list_to_track = []
-array_to_track = numpy.array([], dtype=float)
+array_to_track = numpy.array([])
 
 # Initalisieren der Variablen, die die Zeit speichern
 array_time = 0
