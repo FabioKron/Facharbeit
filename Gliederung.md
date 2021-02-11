@@ -8,7 +8,9 @@
 
 
 ## Grundlagen zu Listen und Arrays
-        1. Datentyp
+        1. Implementierung
+        
+        2. Datentyp
                 -> Konstante/Dynamische Größe -> Float (Zahlen)
 
 ## Einflüsse von Hard- und Software
