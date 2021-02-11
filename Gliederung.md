@@ -18,11 +18,6 @@
 
         3. Interpreter -> cPython
 
-## Begriffsdefinitionen
-        1. Array -> Array des Moduls Numpy
-
-        2. Liste -> normale Liste Python
-
 
 ## Analysieren der Anwendungsfälle
         1. Auswählen des Anwendungsbeispiels und Erklären von Grundlagen für das jeweilige Beispiel
