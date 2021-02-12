@@ -38,6 +38,7 @@
                 - viele Wiederholungen
 
         3. Anwendungsbeispiel in Algorithmus zum Dokumentieren der Laufzeit und des belegten Speichers implementieren
+                - Mit den verschiedenen Datentypenvariatioenen
 
         4. Testdaten sammeln
 
