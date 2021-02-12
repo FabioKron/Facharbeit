@@ -30,15 +30,19 @@ else:
 # Zählvariable, wird benötigt um alle Elemente zu speichern
 i = 0
 
+
 while i < iterations:
     i += 1
 
+    # Vorbereitung der Aktion des Durchlaufs
     randomNumber = random.random()
 
+    # Aktion beim Array
     start_of_next_array_timeframe = time.time()
     array_to_track = numpy.append(array_to_track, randomNumber)
     array_time += time.time() - start_of_next_array_timeframe
 
+    # Aktion bei der Liste
     start_of_next_list_timeframe = time.time()
     list_to_track.append(randomNumber)
     list_time += time.time() - start_of_next_list_timeframe
@@ -49,5 +53,6 @@ while i < iterations:
             [str(i), str(sys.getsizeof(list_to_track)), str(sys.getsizeof(array_to_track)), str(list_time),
              str(array_time)]) + "\n")
 
+    # Ausgeben einer Statusmeldung
     if not i % 1000:
         print("Status saved for", i, " iteration")
