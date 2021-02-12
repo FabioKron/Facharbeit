@@ -20,7 +20,7 @@ array, = plt.plot(iterations, runtime_array)
 
 plt.margins(0)
 
-plt.title("Laufzeit nach Anzahl der Ausführungen")
+plt.title(sys.argv[1] + "\nLaufzeit nach Anzahl der Ausführungen")
 plt.xlabel("Anzahl der Ausführungen")
 plt.ylabel("Laufzeit in Sekunden")
 

@@ -20,12 +20,11 @@ array, = plt.plot(iterations, memory_array, label="Array")
 
 plt.margins(0)
 
-plt.title("Speicherbelegung nach Anzahl der Ausführungen")
+plt.title(sys.argv[1] + "\nSpeicherbelegung nach Anzahl der Ausführungen")
 plt.xlabel("Anzahl der Ausführungen")
 plt.ylabel("Speicherbelegung in Bytes")
 
 plt.subplots_adjust(left=0.15)
-
 
 plt.legend((liste, array), ("Liste", "Array"))
 
