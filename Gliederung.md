@@ -40,11 +40,11 @@
         3. Anwendungsbeispiel in Algorithmus zum Dokumentieren der Laufzeit und des belegten Speichers implementieren
                 - Floats von 0-1
 
-        4. Testdaten sammeln
+        4. Durchführung
 
-        5. Testdaten analysieren
+        5. Ergebnisse
 
-        6. Testdaten interpretieren
+        6. Interpretation
 
 
 ## Fazit
