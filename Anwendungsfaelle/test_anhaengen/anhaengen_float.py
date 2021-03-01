@@ -5,7 +5,6 @@ import sys
 
 
 def gen_test_data(filename, iterations=10000):
-
     # Erstellen der Datei
     open(filename, "x").close()
 
@@ -22,25 +21,23 @@ def gen_test_data(filename, iterations=10000):
     array_time = 0
     list_time = 0
 
-
     # Zählvariable, wird benötigt um alle Elemente zu speichern
     i = 0
-
 
     while i < iterations:
         i += 1
 
         # Vorbereitung der Aktion des Durchlaufs
-        randomNumber = random.random()
+        random_number = random.random()
 
         # Aktion beim Array
         start_of_next_array_timeframe = time.time()
-        array_to_track = numpy.append(array_to_track, randomNumber)
+        array_to_track = numpy.append(array_to_track, random_number)
         array_time += time.time() - start_of_next_array_timeframe
 
         # Aktion bei der Liste
         start_of_next_list_timeframe = time.time()
-        list_to_track.append(randomNumber)
+        list_to_track.append(random_number)
         list_time += time.time() - start_of_next_list_timeframe
 
         # Speichern der Messwerte in der Datei
