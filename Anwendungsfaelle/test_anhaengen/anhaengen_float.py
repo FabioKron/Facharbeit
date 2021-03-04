@@ -48,4 +48,4 @@ def gen_test_data(filename, iterations=10000):
 
         # Ausgeben einer Statusmeldung
         if not i % 1000:
-            print("Status saved for", i, " iteration")
+            print("Status saved for", i, " iterations")
