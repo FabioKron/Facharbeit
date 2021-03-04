@@ -4,6 +4,8 @@ iterations = int(input("Iterations for each run: "))
 numOfTestFiles = int(input("Number of test runs: "))
 filenames = input("Filename without type-end to save data: ")
 
+
+# Generieren der Testergebnisse
 current_run = 0
 while current_run < numOfTestFiles:
     current_run += 1
