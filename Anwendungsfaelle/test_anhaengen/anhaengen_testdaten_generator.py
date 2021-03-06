@@ -6,6 +6,12 @@ import typing
 
 
 def messe_anhaengen(dateiname: str, wiederholungen_gesamt: int):
+    """
+    Es werden Elemente an die Liste und den Array angehaengt;
+    der Prozess wird gemessen;
+    die Daten werden in einer Datei gespeichert.
+    """
+
     # Ausgeben einer Statusmeldung vor dem Generieren der Messdaten
     print("Messdaten werden generiert...")
 
