@@ -79,6 +79,6 @@ def _erstelle_datei(dateiname: str):
     open(dateiname, "x").close()
 
     with open(dateiname, "a") as datei:
-        datei.write("Wiederholung,Speicher Liste gesamt,Speicher Array,Speicherveraenderung Liste," +
+        datei.write("Wiederholung,Speicher Liste gesamt,Speicher Array gesamt,Speicherveraenderung Liste," +
                     "Speicherveraenderung Array,Gesamtlaufzeit Liste,Gesamtlaufzeit Array," +
                     "Gesamtlaufzeitveraenderung Liste,Gesamtlaufzeitveraenderung Array\n")
