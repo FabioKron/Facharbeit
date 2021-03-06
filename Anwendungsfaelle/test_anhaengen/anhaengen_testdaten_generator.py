@@ -5,7 +5,7 @@ import sys
 import typing
 
 
-def generiere_testdaten(dateiname: str, wiederholungen_gesamt: int):
+def messe_anhaengen(dateiname: str, wiederholungen_gesamt: int):
     # Ausgeben einer Statusmeldung vor dem Generieren der Messdaten
     print("Messdaten werden generiert...")
 
