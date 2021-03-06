@@ -22,7 +22,7 @@ plt.margins(0)
 
 plt.title(sys.argv[1] + "\nSpeicherveränderung nach Anzahl der Ausführungen")
 plt.xlabel("Anzahl der Ausführungen")
-plt.ylabel("Speicherbelegung in Bytes")
+plt.ylabel("Speicherveränderung in Bytes pro Ausführung")
 
 plt.subplots_adjust(left=0.15)
 
