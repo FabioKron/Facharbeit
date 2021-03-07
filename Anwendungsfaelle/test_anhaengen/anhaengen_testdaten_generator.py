@@ -88,3 +88,13 @@ def _erstelle_datei(dateiname: str):
         datei.write("Wiederholung,Speicher Liste gesamt,Speicher Array gesamt,Speicherveraenderung Liste," +
                     "Speicherveraenderung Array,Gesamtlaufzeit Liste,Gesamtlaufzeit Array," +
                     "Gesamtlaufzeitveraenderung Liste,Gesamtlaufzeitveraenderung Array\n")
+
+
+if __name__ == "__main__":
+    anzahl_dateien: int = int(input("Anzahl an Dateien mit Messdaten, die generiert werden:"))
+    dateiname_anfang: str = input("Anfang des Dateinamen:")
+    wiederholungen: int = int(input("Anzahl an Wiederholungen je Datei:"))
+    dateinamen: list = [dateiname_anfang + str(i+1) + ".csv" for i in range(anzahl_dateien)]
+    
+    for dateiname in dateinamen:
+        messe_anhaengen(dateiname=dateiname, wiederholungen_gesamt=wiederholungen)
