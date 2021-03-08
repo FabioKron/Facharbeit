@@ -20,8 +20,8 @@ array, = plt.plot(wiederholung, speicher_array_gesamt, label="Array")
 
 plt.margins(0)
 
-plt.title(sys.argv[1] + "\nSpeicherbelegung nach Anzahl der Ausführungen")
-plt.xlabel("Anzahl der Ausführungen")
+plt.title(sys.argv[1] + "\nSpeicherbelegung nach Anzahl der Wiederholungen")
+plt.xlabel("Anzahl der Wiederholungen")
 plt.ylabel("Speicherbelegung in Bytes")
 
 plt.subplots_adjust(left=0.15)
