@@ -90,11 +90,92 @@ def _erstelle_datei(dateiname: str):
                     "Gesamtlaufzeitveraenderung Liste,Gesamtlaufzeitveraenderung Array\n")
 
 
+def berechne_mittelwerte(dateinamen_messdaten: list, dateiname_mittelwerte: str, wiederholungen_je_datei: int):
+    print("Mittelwerte werden berechnet...")
+
+    anzahl_dateien_mit_messdaten: int = len(dateinamen_messdaten)
+
+    # Erstellen der Datei, die den Mittelwert speichert
+    _erstelle_datei(dateiname=dateiname_mittelwerte)
+
+    # Speichern der Dateiinhalte in einer Liste
+    messdaten: list = []
+    for dateiname in dateinamen_messdaten:
+        with open(dateiname, "r") as datei_messdaten:
+            messdaten.append([zeile.split(",")
+                              for zeile
+                              in datei_messdaten.read().split("\n")
+                              if zeile])
+
+    # Oeffnen der Datei, die die Mittelwerte speichert
+    datei_mittelwerte: typing.TextIO = open(dateiname_mittelwerte, "a")
+
+    # Berechnen des Durchschnitts jedes Elements und speichern in datei_mittelwert
+    wiederholung: int = 0
+    while wiederholung < wiederholungen_je_datei:
+        wiederholung += 1
+
+        # Berechnen der Summe der Messdaten nach der Wiederholung
+        summe_speicher_liste: int = 0
+        summe_speicher_array: int = 0
+
+        summe_speicherveraenderung_liste: int = 0
+        summe_speicherveraenderung_array: int = 0
+
+        summe_gesamtlaufzeit_liste: float = 0
+        summe_gesamtlaufzeit_array: float = 0
+
+        summe_gesamtlaufzeitveraenderung_liste: float = 0
+        summe_gesamtlaufzeitveraenderung_array: float = 0
+
+        for messung in messdaten:
+            summe_speicher_liste += int(messung[wiederholung][1])
+            summe_speicher_array += int(messung[wiederholung][2])
+
+            summe_speicherveraenderung_liste += int(messung[wiederholung][3])
+            summe_speicherveraenderung_array += int(messung[wiederholung][4])
+
+            summe_gesamtlaufzeit_liste += float(messung[wiederholung][5])
+            summe_gesamtlaufzeit_array += float(messung[wiederholung][6])
+
+            summe_gesamtlaufzeitveraenderung_liste += float(messung[wiederholung][7])
+            summe_gesamtlaufzeitveraenderung_array += float(messung[wiederholung][8])
+
+        # Berechnen der Mittelwerte aus den Summen
+        mittelwert_speicher_liste: float = summe_speicher_liste / anzahl_dateien_mit_messdaten
+        mittelwert_speicher_array: float = summe_speicher_array / anzahl_dateien_mit_messdaten
+
+        mittelwert_speicherveraenderung_liste: float = summe_speicherveraenderung_liste / anzahl_dateien_mit_messdaten
+        mittelwert_speicherveraenderung_array: float = summe_speicherveraenderung_array / anzahl_dateien_mit_messdaten
+
+        mittelwert_gesamtlaufzeit_liste: float = summe_gesamtlaufzeit_liste / anzahl_dateien_mit_messdaten
+        mittelwert_gesamtlaufzeit_array: float = summe_gesamtlaufzeit_array / anzahl_dateien_mit_messdaten
+
+        mittelwert_gesamtlaufzeitveraenderung_liste: float = \
+            summe_gesamtlaufzeitveraenderung_liste / anzahl_dateien_mit_messdaten
+        mittelwert_gesamtlaufzeitveraenderung_array: float = \
+            summe_gesamtlaufzeitveraenderung_array / anzahl_dateien_mit_messdaten
+
+        datei_mittelwerte.write(",".join(
+            [str(wiederholung),
+             str(mittelwert_speicher_liste), str(mittelwert_speicher_array),
+             str(mittelwert_speicherveraenderung_liste), str(mittelwert_speicherveraenderung_array),
+             str(mittelwert_gesamtlaufzeit_liste), str(mittelwert_gesamtlaufzeit_array),
+             str(mittelwert_gesamtlaufzeitveraenderung_liste), str(mittelwert_gesamtlaufzeitveraenderung_array)])
+                                + "\n")
+
+    print("Mittelwerte erfolgreich gespeichert...")
+
+
 if __name__ == "__main__":
     anzahl_dateien: int = int(input("Anzahl an Dateien mit Messdaten, die generiert werden:"))
     dateiname_anfang: str = input("Anfang des Dateinamen:")
     wiederholungen: int = int(input("Anzahl an Wiederholungen je Datei:"))
-    dateinamen: list = [dateiname_anfang + str(i+1) + ".csv" for i in range(anzahl_dateien)]
-    
+    dateinamen: list = [dateiname_anfang + str(i + 1) + ".csv" for i in range(anzahl_dateien)]
+
     for dateiname in dateinamen:
         messe_anhaengen(dateiname=dateiname, wiederholungen_gesamt=wiederholungen)
+
+    berechne_mittelwerte(dateinamen_messdaten=dateinamen,
+                         dateiname_mittelwerte=dateiname_anfang + "_mittelwerte.csv",
+                         wiederholungen_je_datei=wiederholungen)
