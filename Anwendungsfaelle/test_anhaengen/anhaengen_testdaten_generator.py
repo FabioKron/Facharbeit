@@ -183,8 +183,8 @@ if __name__ == "__main__":
     wiederholungen: int = int(input("Anzahl an Wiederholungen je Datei:"))
     dateinamen: list = [dateiname_anfang + str(i + 1) + ".csv" for i in range(anzahl_dateien)]
 
-    for dateiname in dateinamen:
-        messe_anhaengen(dateiname=dateiname, wiederholungen_gesamt=wiederholungen)
+    for name in dateinamen:
+        messe_anhaengen(dateiname=name, wiederholungen_gesamt=wiederholungen)
 
     berechne_mittelwerte(dateinamen_messdaten=dateinamen,
                          dateiname_mittelwerte=dateiname_anfang + "_mittelwerte.csv",
