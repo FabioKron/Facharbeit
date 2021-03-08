@@ -11,8 +11,8 @@ dateiinhalt: list = [zeile.split(",") for zeile in dateiinhalt if zeile]
 
 # Sortieren der benoetigten Daten in seperate Listen
 wiederholung: list = [int(zeile[0]) for zeile in dateiinhalt[1:]]
-speicherveraenderung_liste: list = [int(zeile[3]) for zeile in dateiinhalt[1:]]
-speicherveraenderung_array: list = [int(zeile[4]) for zeile in dateiinhalt[1:]]
+speicherveraenderung_liste: list = [float(zeile[3]) for zeile in dateiinhalt[1:]]
+speicherveraenderung_array: list = [float(zeile[4]) for zeile in dateiinhalt[1:]]
 
 # Grafische Darstellung der Listen
 liste, = plt.plot(wiederholung, speicherveraenderung_liste, label="Liste")

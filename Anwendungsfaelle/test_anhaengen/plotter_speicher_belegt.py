@@ -11,8 +11,8 @@ dateiinhalt: list = [zeile.split(",") for zeile in dateiinhalt if zeile]
 
 # Sortieren der benoetigten Daten in seperate Listen
 wiederholung: list = [int(zeile[0]) for zeile in dateiinhalt[1:]]
-speicher_liste_gesamt: list = [int(zeile[1]) for zeile in dateiinhalt[1:]]
-speicher_array_gesamt: list = [int(zeile[2]) for zeile in dateiinhalt[1:]]
+speicher_liste_gesamt: list = [float(zeile[1]) for zeile in dateiinhalt[1:]]
+speicher_array_gesamt: list = [float(zeile[2]) for zeile in dateiinhalt[1:]]
 
 # Grafische Darstellung der Listen
 liste, = plt.plot(wiederholung, speicher_liste_gesamt, label="Liste")
