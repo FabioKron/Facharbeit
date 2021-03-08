@@ -99,6 +99,127 @@ def _erstelle_datei(dateiname: str):
                     "Gesamtlaufzeitveraenderung Liste,Gesamtlaufzeitveraenderung Array\n")
 
 
+# noinspection PyTypeChecker
+def berechne_maximalabweichungen(dateinamen_messdaten: list, dateiname_mittelwerte: str,
+                                 dateiname_maximalabweichungen: str, wiederholungen_je_datei: int):
+    print("Maximalabweichungen werden berechnet...")
+
+    # Erstellen der Datei, die die Maximalabweichungen speichert
+    _erstelle_datei(dateiname=dateiname_maximalabweichungen)
+
+    # Speichern der Messdaten aller Dateien in einer Liste
+    messdaten: list = []
+    for dateiname in dateinamen_messdaten:
+        with open(dateiname, "r") as datei_messdaten:
+            messdaten.append([zeile.split(",")
+                              for zeile
+                              in datei_messdaten.read().split("\n")
+                              if zeile])
+
+    # Speichern der Mittelwerte in einer Liste
+    with open(dateiname_mittelwerte) as datei_mittelwerte:
+        mittelwerte: list = [zeile.split(",")
+                             for zeile
+                             in datei_mittelwerte.read().split("\n")
+                             if zeile]
+
+    # Oeffnen der Datei, die die Maximalabweichungen speichert
+    datei_maximalabweichungen = open(dateiname_maximalabweichungen, "a")
+
+    # Vergleichen der verschiedenen Messdaten mit dem Durchschnitt und Filtern der groessten Abweichungen
+    wiederholung: int = 0
+    while wiederholung < wiederholungen_je_datei:
+        wiederholung += 1
+
+        # Initialisieren der Variablen der Mittelwerte
+        mittelwert_belegter_speicher_liste: float = float(
+            mittelwerte[wiederholung][INDEX_BELEGTER_SPEICHER_LISTE])
+        mittelwert_belegter_speicher_array: float = float(
+            mittelwerte[wiederholung][INDEX_BELEGTER_SPEICHER_ARRAY])
+
+        mittelwert_speicherveraenderung_liste: float = float(
+            mittelwerte[wiederholung][INDEX_SPEICHERVERAENDERUNG_LISTE])
+        mittelwert_speicherveraenderung_array: float = float(
+            mittelwerte[wiederholung][INDEX_SPEICHERVERAENDERUNG_ARRAY])
+
+        mittelwert_gesamtlaufzeit_liste: float = float(
+            mittelwerte[wiederholung][INDEX_GESAMTLAUFZEIT_LISTE])
+        mittelwert_gesamtlaufzeit_array: float = float(
+            mittelwerte[wiederholung][INDEX_GESAMTLAUFZEIT_ARRAY])
+
+        mittelwert_gesamtlaufzeitveraenderung_liste: float = float(
+            mittelwerte[wiederholung][INDEX_LAUFZEITVERAENDERUNG_LISTE])
+        mittelwert_gesamtlaufzeitveraenderung_array: float = float(
+            mittelwerte[wiederholung][INDEX_LAUFZEITVERAENDERUNG_ARRAY])
+
+        # Berechnen der Maximalabweichungen
+        maximalabweichung_belegter_speicher_liste: float = max(
+            [
+                float(messung[wiederholung][INDEX_BELEGTER_SPEICHER_LISTE]) - mittelwert_belegter_speicher_liste
+                for messung in messdaten
+            ], key=abs)
+
+        maximalabweichung_belegter_speicher_array: float = max(
+            [
+                float(messung[wiederholung][INDEX_BELEGTER_SPEICHER_ARRAY]) - mittelwert_belegter_speicher_array
+                for messung in messdaten
+            ], key=abs)
+
+        maximalabweichung_speicherveraenderung_liste: float = max(
+            [
+                float(messung[wiederholung][INDEX_SPEICHERVERAENDERUNG_LISTE]) - mittelwert_speicherveraenderung_liste
+                for messung in messdaten
+            ], key=abs)
+
+        maximalabweichung_speicherveraenderung_array: float = max(
+            [
+                float(messung[wiederholung][INDEX_SPEICHERVERAENDERUNG_ARRAY]) - mittelwert_speicherveraenderung_array
+                for messung in messdaten
+            ], key=abs)
+
+        maximalabweichung_gesamtlaufzeit_liste: float = max(
+            [
+                float(messung[wiederholung][INDEX_GESAMTLAUFZEIT_LISTE]) - mittelwert_gesamtlaufzeit_liste
+                for messung in messdaten
+            ], key=abs)
+
+        maximalabweichung_gesamtlaufzeit_array: float = max(
+            [
+                float(messung[wiederholung][INDEX_GESAMTLAUFZEIT_ARRAY]) - mittelwert_gesamtlaufzeit_array
+                for messung in messdaten
+            ], key=abs)
+
+        maximalabweichung_gesamtlaufzeitveraenderung_liste: float = max(
+            [
+                float(
+                    messung[wiederholung][INDEX_LAUFZEITVERAENDERUNG_LISTE]
+                      ) - mittelwert_gesamtlaufzeitveraenderung_liste
+                for messung in messdaten
+            ], key=abs)
+
+        maximalabweichung_gesamtlaufzeitveraenderung_array: float = max(
+            [
+                float(
+                    messung[wiederholung][INDEX_LAUFZEITVERAENDERUNG_ARRAY]
+                ) - mittelwert_gesamtlaufzeitveraenderung_array
+                for messung in messdaten
+            ], key=abs)
+
+        # Speichern der Maximalabweichungen
+        datei_maximalabweichungen.write(",".join(
+            [str(wiederholung),
+             str(maximalabweichung_belegter_speicher_liste), str(maximalabweichung_belegter_speicher_array),
+             str(maximalabweichung_speicherveraenderung_liste), str(maximalabweichung_speicherveraenderung_array),
+             str(maximalabweichung_gesamtlaufzeit_liste), str(maximalabweichung_gesamtlaufzeit_array),
+             str(maximalabweichung_gesamtlaufzeitveraenderung_liste),
+             str(maximalabweichung_gesamtlaufzeitveraenderung_array)])
+                                        + "\n")
+
+    datei_maximalabweichungen.close()
+
+    print("Maximalabweichungen erfolgreich gespeichert...")
+
+
 def berechne_mittelwerte(dateinamen_messdaten: list, dateiname_mittelwerte: str, wiederholungen_je_datei: int):
     print("Mittelwerte werden berechnet...")
 
@@ -186,6 +307,13 @@ if __name__ == "__main__":
     for name in dateinamen:
         messe_anhaengen(dateiname=name, wiederholungen_gesamt=wiederholungen)
 
+    name_datei_mittelwerte = dateiname_anfang + "_mittelwerte.csv"
     berechne_mittelwerte(dateinamen_messdaten=dateinamen,
-                         dateiname_mittelwerte=dateiname_anfang + "_mittelwerte.csv",
+                         dateiname_mittelwerte=name_datei_mittelwerte,
                          wiederholungen_je_datei=wiederholungen)
+
+    name_datei_maximalabweichungen = dateiname_anfang + "_maximalabweichungen.csv"
+    berechne_maximalabweichungen(dateinamen_messdaten=dateinamen,
+                                 dateiname_mittelwerte=name_datei_mittelwerte,
+                                 dateiname_maximalabweichungen=name_datei_maximalabweichungen,
+                                 wiederholungen_je_datei=wiederholungen)
