@@ -156,6 +156,7 @@ def berechne_mittelwerte(dateinamen_messdaten: list, dateiname_mittelwerte: str,
         mittelwert_gesamtlaufzeitveraenderung_array: float = \
             summe_gesamtlaufzeitveraenderung_array / anzahl_dateien_mit_messdaten
 
+        # Speichern der Mittelwerte
         datei_mittelwerte.write(",".join(
             [str(wiederholung),
              str(mittelwert_speicher_liste), str(mittelwert_speicher_array),
