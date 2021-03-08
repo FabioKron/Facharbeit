@@ -4,6 +4,15 @@ import time
 import sys
 import typing
 
+INDEX_BELEGTER_SPEICHER_LISTE: int = 1
+INDEX_BELEGTER_SPEICHER_ARRAY: int = 2
+INDEX_SPEICHERVERAENDERUNG_LISTE: int = 3
+INDEX_SPEICHERVERAENDERUNG_ARRAY: int = 4
+INDEX_GESAMTLAUFZEIT_LISTE: int = 5
+INDEX_GESAMTLAUFZEIT_ARRAY: int = 6
+INDEX_LAUFZEITVERAENDERUNG_LISTE: int = 7
+INDEX_LAUFZEITVERAENDERUNG_ARRAY: int = 8
+
 
 def messe_anhaengen(dateiname: str, wiederholungen_gesamt: int):
     """
@@ -129,17 +138,17 @@ def berechne_mittelwerte(dateinamen_messdaten: list, dateiname_mittelwerte: str,
         summe_gesamtlaufzeitveraenderung_array: float = 0
 
         for messung in messdaten:
-            summe_speicher_liste += int(messung[wiederholung][1])
-            summe_speicher_array += int(messung[wiederholung][2])
+            summe_speicher_liste += int(messung[wiederholung][INDEX_BELEGTER_SPEICHER_LISTE])
+            summe_speicher_array += int(messung[wiederholung][INDEX_BELEGTER_SPEICHER_ARRAY])
 
-            summe_speicherveraenderung_liste += int(messung[wiederholung][3])
-            summe_speicherveraenderung_array += int(messung[wiederholung][4])
+            summe_speicherveraenderung_liste += int(messung[wiederholung][INDEX_SPEICHERVERAENDERUNG_LISTE])
+            summe_speicherveraenderung_array += int(messung[wiederholung][INDEX_SPEICHERVERAENDERUNG_ARRAY])
 
-            summe_gesamtlaufzeit_liste += float(messung[wiederholung][5])
-            summe_gesamtlaufzeit_array += float(messung[wiederholung][6])
+            summe_gesamtlaufzeit_liste += float(messung[wiederholung][INDEX_GESAMTLAUFZEIT_LISTE])
+            summe_gesamtlaufzeit_array += float(messung[wiederholung][INDEX_GESAMTLAUFZEIT_ARRAY])
 
-            summe_gesamtlaufzeitveraenderung_liste += float(messung[wiederholung][7])
-            summe_gesamtlaufzeitveraenderung_array += float(messung[wiederholung][8])
+            summe_gesamtlaufzeitveraenderung_liste += float(messung[wiederholung][INDEX_LAUFZEITVERAENDERUNG_LISTE])
+            summe_gesamtlaufzeitveraenderung_array += float(messung[wiederholung][INDEX_LAUFZEITVERAENDERUNG_ARRAY])
 
         # Berechnen der Mittelwerte aus den Summen
         mittelwert_speicher_liste: float = summe_speicher_liste / anzahl_dateien_mit_messdaten
