@@ -14,7 +14,9 @@
                 -> Konstante/Dynamische Größe -> Float (Zahlen)
 
 ## Einflüsse von Hard- und Software
-        1. Betriebssystem -> Ubuntu
+        1. Betriebssystem
+			-> Ubuntu 20.04.2.0
+			-> Windows November 2020 			
 
         2. Hardware -> VM
 
