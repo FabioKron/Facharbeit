@@ -1,5 +1,11 @@
 # Outline
 
+## Titelblatt
+
+## Kurzfassung
+
+## Inhaltsverzeichnus
+
 ## 1. Einleitung 
     - Python Listen + Numpy Arrays
     - Anhängen
@@ -24,3 +30,8 @@
 ## 5. Interpretation
 
 ## 6. Fazit, etc...
+
+## Anhang 
+    - (Abbildungen + Quellen)
+
+## Erklärung über selbstständige Anfertigung der Arbeit
