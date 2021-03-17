@@ -1,23 +1,23 @@
-1. Auswählen des Anwendungsbeispiels
+# Outline
 
-    Anhängen von Elementen:
-    - list.append
-    - numpy.append
+## 1. Einleitung 
+    - Python Listen + Numpy Arrays
+    - Anhängen
 
-2. Erklären von Grundlagen für das jeweilige Beispiel
+## 2. Grundlagen
+    - Einflüsse von außen (OS, Hardware, Interpreter/Compiler)
+    - list.append + numpy.append
 
-    - Liste: 
-        - Platz wird "reserviert"
-        - Element wird einfach angehängt
+## 3. Durchführung
+    - Algorithmus zum Dokumentieren der Laufzeit und des belegten Speichers (+ float)
+    - OS, Interpreter/ Compiler, Hardware
+    - Anzahl Durchführungen
+    - Mittelwert + Maximalabweichung
 
-    - Array:
-        - kein Platz wird reserviert
-        - Array wird "umplatziert"
+## 4. Ergebnisse
+    1. Windows
+    2. Ubuntu
 
+## 5. Interpretation
 
-
-3. Anwendungsbeispiel implementieren und in Tracking-Umgebung einbetten
-
-4. Testdaten sammeln und analysieren (Durchführung)
-
-5. Testdaten interpretieren
+## 6. Fazit, etc...
