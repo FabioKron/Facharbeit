@@ -1,5 +1,7 @@
 # Grundlagen
 
+###### Bezug zu Rest -> Am besten erst bei Planung Informationen sammeln
+
 ### Informationen
 
 - .append
