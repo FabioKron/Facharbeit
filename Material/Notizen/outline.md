@@ -2,7 +2,7 @@
 
 ## Kurzfassung
 
-## Inhaltsverzeichnus
+## Inhaltsverzeichnis
 
 ## 1. Einleitung 
     - Python Listen + Numpy Arrays
