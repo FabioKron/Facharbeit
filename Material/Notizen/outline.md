@@ -1,5 +1,3 @@
-# Outline
-
 ## Titelblatt
 
 ## Kurzfassung
