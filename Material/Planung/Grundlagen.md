@@ -12,3 +12,29 @@
     - Os
     - Hardware
     - Interpreter/Compiler
+
+
+## Planung
+
+### Programmiersprache 
+- Programmiersprache
+
+- Interpreter
+
+- Python
+
+- Python 3.8
+
+- Programmbibliothek
+
+- Numpy
+
+- Datenstruktur
+
+- Datentyp
+
+- Liste (.append)
+
+- Array (.append)
+
+- System
