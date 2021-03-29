@@ -5,10 +5,8 @@
 ## Inhaltsverzeichnis
 
 ## 1. Einleitung 
-    - Python Listen + Numpy Arrays
-    - Anhängen
-
-    - Bedeutung des Themas
+    - Motivation
+    - Ziel
 
 ## 2. Grundlagen
     - Einflüsse von außen (OS, Hardware, Interpreter/Compiler)
