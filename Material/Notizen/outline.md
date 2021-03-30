@@ -11,10 +11,6 @@
 ## 2. Grundlagen
 
 ## 3. Durchführung
-    - Algorithmus zum Dokumentieren der Laufzeit und des belegten Speichers (+ float)
-    - OS, Interpreter/ Compiler, Hardware(VM)
-    - Anzahl Durchführungen
-    - Mittelwert + Maximalabweichung
 
 ## 4. Ergebnisse
     1. Windows
