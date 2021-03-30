@@ -9,9 +9,6 @@
     - Ziel
 
 ## 2. Grundlagen
-    - Einflüsse von außen (OS, Hardware, Interpreter/Compiler)
-    - list.append + numpy.append (Implementierung)
-    - Datentyp
 
 ## 3. Durchführung
     - Algorithmus zum Dokumentieren der Laufzeit und des belegten Speichers (+ float)
