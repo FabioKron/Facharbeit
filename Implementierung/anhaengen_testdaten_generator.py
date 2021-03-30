@@ -34,11 +34,11 @@ def messe_anhaengen(dateiname: str, wiederholungen_gesamt: int):
     gesamtlaufzeit_liste: float = 0.0
     gesamtlaufzeit_array: float = 0.0
 
-    # Zaehlvariable
-    derzeitige_wiederholung: int = 0
-
     # Oeffnen der Datei zum Speichern der Messdaten
     datei: typing.TextIO = open(dateiname, "a")
+
+    # Zaehlvariable
+    derzeitige_wiederholung: int = 0
 
     # Wiederholen der Aktion + Speichern der Messdaten
     while derzeitige_wiederholung < wiederholungen_gesamt:
@@ -67,8 +67,10 @@ def messe_anhaengen(dateiname: str, wiederholungen_gesamt: int):
 
         speicherplatz_liste_danach: int = sys.getsizeof(liste)
         speicherplatz_array_danach: int = sys.getsizeof(array)
-        speicherplatzveraenderung_liste: int = speicherplatz_liste_danach - speicherplatz_liste_davor
-        speicherplatzveraenderung_array: int = speicherplatz_array_danach - speicherplatz_array_davor
+        speicherplatzveraenderung_liste: int = speicherplatz_liste_danach - \
+            speicherplatz_liste_davor
+        speicherplatzveraenderung_array: int = speicherplatz_array_danach - \
+            speicherplatz_array_davor
 
         # Speichern der Messdaten in der Datei
 
@@ -81,7 +83,8 @@ def messe_anhaengen(dateiname: str, wiederholungen_gesamt: int):
 
         # Ausgeben einer Statusmeldung nach 1000 Wiederholungen
         if derzeitige_wiederholung % 1000 == 0:
-            print("Messdaten fuer", derzeitige_wiederholung, "Wiederholungen generiert")
+            print("Messdaten fuer", derzeitige_wiederholung,
+                  "Wiederholungen generiert")
 
     # Schliessen der Datei
     datei.close()
@@ -155,37 +158,43 @@ def berechne_maximalabweichungen(dateinamen_messdaten: list, dateiname_mittelwer
         # Berechnen der Maximalabweichungen
         maximalabweichung_belegter_speicher_liste: float = max(
             [
-                float(messung[wiederholung][INDEX_BELEGTER_SPEICHER_LISTE]) - mittelwert_belegter_speicher_liste
+                float(messung[wiederholung][INDEX_BELEGTER_SPEICHER_LISTE]
+                      ) - mittelwert_belegter_speicher_liste
                 for messung in messdaten
             ], key=abs)
 
         maximalabweichung_belegter_speicher_array: float = max(
             [
-                float(messung[wiederholung][INDEX_BELEGTER_SPEICHER_ARRAY]) - mittelwert_belegter_speicher_array
+                float(messung[wiederholung][INDEX_BELEGTER_SPEICHER_ARRAY]
+                      ) - mittelwert_belegter_speicher_array
                 for messung in messdaten
             ], key=abs)
 
         maximalabweichung_speicherveraenderung_liste: float = max(
             [
-                float(messung[wiederholung][INDEX_SPEICHERVERAENDERUNG_LISTE]) - mittelwert_speicherveraenderung_liste
+                float(messung[wiederholung][INDEX_SPEICHERVERAENDERUNG_LISTE]
+                      ) - mittelwert_speicherveraenderung_liste
                 for messung in messdaten
             ], key=abs)
 
         maximalabweichung_speicherveraenderung_array: float = max(
             [
-                float(messung[wiederholung][INDEX_SPEICHERVERAENDERUNG_ARRAY]) - mittelwert_speicherveraenderung_array
+                float(messung[wiederholung][INDEX_SPEICHERVERAENDERUNG_ARRAY]
+                      ) - mittelwert_speicherveraenderung_array
                 for messung in messdaten
             ], key=abs)
 
         maximalabweichung_gesamtlaufzeit_liste: float = max(
             [
-                float(messung[wiederholung][INDEX_GESAMTLAUFZEIT_LISTE]) - mittelwert_gesamtlaufzeit_liste
+                float(messung[wiederholung][INDEX_GESAMTLAUFZEIT_LISTE]
+                      ) - mittelwert_gesamtlaufzeit_liste
                 for messung in messdaten
             ], key=abs)
 
         maximalabweichung_gesamtlaufzeit_array: float = max(
             [
-                float(messung[wiederholung][INDEX_GESAMTLAUFZEIT_ARRAY]) - mittelwert_gesamtlaufzeit_array
+                float(messung[wiederholung][INDEX_GESAMTLAUFZEIT_ARRAY]
+                      ) - mittelwert_gesamtlaufzeit_array
                 for messung in messdaten
             ], key=abs)
 
@@ -208,12 +217,15 @@ def berechne_maximalabweichungen(dateinamen_messdaten: list, dateiname_mittelwer
         # Speichern der Maximalabweichungen
         datei_maximalabweichungen.write(",".join(
             [str(wiederholung),
-             str(maximalabweichung_belegter_speicher_liste), str(maximalabweichung_belegter_speicher_array),
-             str(maximalabweichung_speicherveraenderung_liste), str(maximalabweichung_speicherveraenderung_array),
-             str(maximalabweichung_gesamtlaufzeit_liste), str(maximalabweichung_gesamtlaufzeit_array),
+             str(maximalabweichung_belegter_speicher_liste), str(
+                 maximalabweichung_belegter_speicher_array),
+             str(maximalabweichung_speicherveraenderung_liste), str(
+                 maximalabweichung_speicherveraenderung_array),
+             str(maximalabweichung_gesamtlaufzeit_liste), str(
+                 maximalabweichung_gesamtlaufzeit_array),
              str(maximalabweichung_gesamtlaufzeitveraenderung_liste),
              str(maximalabweichung_gesamtlaufzeitveraenderung_array)])
-                                        + "\n")
+            + "\n")
 
     datei_maximalabweichungen.close()
 
@@ -272,11 +284,15 @@ def berechne_mittelwerte(dateinamen_messdaten: list, dateiname_mittelwerte: str,
         mittelwert_speicher_liste: float = summe_speicher_liste / anzahl_dateien_mit_messdaten
         mittelwert_speicher_array: float = summe_speicher_array / anzahl_dateien_mit_messdaten
 
-        mittelwert_speicherveraenderung_liste: float = summe_speicherveraenderung_liste / anzahl_dateien_mit_messdaten
-        mittelwert_speicherveraenderung_array: float = summe_speicherveraenderung_array / anzahl_dateien_mit_messdaten
+        mittelwert_speicherveraenderung_liste: float = summe_speicherveraenderung_liste / \
+            anzahl_dateien_mit_messdaten
+        mittelwert_speicherveraenderung_array: float = summe_speicherveraenderung_array / \
+            anzahl_dateien_mit_messdaten
 
-        mittelwert_gesamtlaufzeit_liste: float = summe_gesamtlaufzeit_liste / anzahl_dateien_mit_messdaten
-        mittelwert_gesamtlaufzeit_array: float = summe_gesamtlaufzeit_array / anzahl_dateien_mit_messdaten
+        mittelwert_gesamtlaufzeit_liste: float = summe_gesamtlaufzeit_liste / \
+            anzahl_dateien_mit_messdaten
+        mittelwert_gesamtlaufzeit_array: float = summe_gesamtlaufzeit_array / \
+            anzahl_dateien_mit_messdaten
 
         mittelwert_gesamtlaufzeitveraenderung_liste: float = \
             summe_gesamtlaufzeitveraenderung_liste / anzahl_dateien_mit_messdaten
@@ -287,19 +303,23 @@ def berechne_mittelwerte(dateinamen_messdaten: list, dateiname_mittelwerte: str,
         datei_mittelwerte.write(",".join(
             [str(wiederholung),
              str(mittelwert_speicher_liste), str(mittelwert_speicher_array),
-             str(mittelwert_speicherveraenderung_liste), str(mittelwert_speicherveraenderung_array),
-             str(mittelwert_gesamtlaufzeit_liste), str(mittelwert_gesamtlaufzeit_array),
+             str(mittelwert_speicherveraenderung_liste), str(
+                 mittelwert_speicherveraenderung_array),
+             str(mittelwert_gesamtlaufzeit_liste), str(
+                 mittelwert_gesamtlaufzeit_array),
              str(mittelwert_gesamtlaufzeitveraenderung_liste), str(mittelwert_gesamtlaufzeitveraenderung_array)])
-                                + "\n")
+            + "\n")
 
     print("Mittelwerte erfolgreich gespeichert...")
 
 
 if __name__ == "__main__":
-    anzahl_dateien: int = int(input("Anzahl an Dateien mit Messdaten, die generiert werden:"))
+    anzahl_dateien: int = int(
+        input("Anzahl an Dateien mit Messdaten, die generiert werden:"))
     dateiname_anfang: str = input("Anfang des Dateinamen:")
     wiederholungen: int = int(input("Anzahl an Wiederholungen je Datei:"))
-    dateinamen: list = [dateiname_anfang + str(i + 1) + ".csv" for i in range(anzahl_dateien)]
+    dateinamen: list = [dateiname_anfang +
+                        str(i + 1) + ".csv" for i in range(anzahl_dateien)]
 
     for name in dateinamen:
         messe_anhaengen(dateiname=name, wiederholungen_gesamt=wiederholungen)
