@@ -41,4 +41,14 @@
     - Gesamtlaufzeit Messung X Liste
 
 #### Laufzeitveränderung
+    - Laufzeitveränderung Mittelwerte gesamt
+    - Laufzeitveränderung Mittelwerte Liste
+    - Laufzeitveränderung Mittelwerte Array (Unterkante)
+
+
+    - Laufzeitveränderung Maximalabweichung gesamt
+    - Laufzeitveränderung Maximalabweichung x/y Zoom (negativ + bei Liste kleiner)
     
+    - Laufzeitveränderung Messung X gesamt
+    - Laufzeitveränderung Messung X unterer Bereich
+    - Laufzeitveränderung Messung X (Stufen)
