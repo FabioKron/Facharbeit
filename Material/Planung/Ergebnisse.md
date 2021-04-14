@@ -1,6 +1,6 @@
 # Speicherbelegung
-## Windows
-#### Speicher
+## Windows + Ubuntu
+#### Speicherbelegung
     - Mittelwert gesamt
     - Maximalabweichung gesamt
 
@@ -12,9 +12,6 @@
 
     - Mittelwert Array
     - Mittelwert Anfang
-
-
-## Ubuntu
 
 
 # Laufzeit
