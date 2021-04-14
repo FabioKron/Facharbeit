@@ -1,5 +1,6 @@
 # Speicherbelegung
 ## Windows + Ubuntu
+
 #### Speicherbelegung
     - Mittelwert gesamt
     - Maximalabweichung gesamt
@@ -16,7 +17,28 @@
 
 # Laufzeit
 ## Windows
+#### Gesamtlaufzeit
+    - Gesamtlaufzeit Mittelwerte gesamt
+    - Gesamtlaufzeit Mittelwerte Liste
+    - Gesamtlaufzeit Maximalabweichung gesamt
 
+    - Gesamtlaufzeit Messung X gesamt
+
+#### Laufzeitveränderung 
+    - Laufzeitveränderung Mittelwerte gesamt
+    - Laufzeitveränderung Maximalabweichung gesamt
+
+    - Laufzeitveränderung Messung X gesamt
 
 
 ## Ubuntu
+#### Gesamtlaufzeit
+    - Gesamtlaufzeit Mittelwerte gesamt
+    - Gesamtlaufzeit Mittelwerte Liste
+    - Gesamtlaufzeit Maximalabweichung gesamt
+
+    - Gesamtlaufzeit Messung X gesamt
+    - Gesamtlaufzeit Messung X Liste
+
+#### Laufzeitveränderung
+    
