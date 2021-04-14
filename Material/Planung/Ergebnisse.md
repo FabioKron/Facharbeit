@@ -1,14 +1,19 @@
 # Speicherbelegung
-### Windows
+## Windows
+#### Speicher
+    - Mittelwert gesamt
+    - Maximalabweichung gesamt
+
+    - Mittelwert Anfang
 
 
 
-### Ubuntu
+## Ubuntu
 
 
 # Laufzeit
-### Windows
+## Windows
 
 
 
-### Ubuntu
+## Ubuntu
