@@ -24,10 +24,10 @@
 
 - Algorithmus zum Dokumentieren der Laufzeit und des belegten Speichers
 (Flussdiagramm)
-    - berechnen Laufzeit
-    - berechnen Laufzeitveränderung
-    - berechnen Speicher
-    - berechnen Speicherveränderung
+    - Messung Laufzeit
+    - Messung Laufzeitveränderung
+    - Messung Speicher
+    - Messung Speicherveränderung
 
 - float ( 0-1)
 
