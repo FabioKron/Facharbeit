@@ -18,16 +18,5 @@ belegter Speicher Ubuntu Maximalabweichung
 Speicherveränderung Windows Mittelwerte
 
 #### D6
-Speicherveränderung Ubuntu Mittelwerte
-
-#### D7
-Speicherveränderung Windows Maximalabweichung
-
-#### D8
-Speicherveränderung Ubuntu Maximalabweichung
-
-#### D9
 Speicherveränderung Windows Mittelwerte Array
 
-#### D10
-Speicherveränderung Ubuntu Mittelwerte Array
