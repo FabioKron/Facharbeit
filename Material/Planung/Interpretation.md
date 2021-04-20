@@ -1,15 +1,17 @@
 
 
 ### Windows + Linux
+- Speicherverwaltung fest vorgegeben
+    -> Bei beiden Betriebssystemen gleich
+    -> Keine Abweichungen
+
 - Speicher Array (+Bezug auf OS)
     - linear (+8 Bytes)
-    - bei beiden Betriebssystemen gleich
 
     - Bezug Grundlagen
 
 - Speicher Liste (+Bezug auf OS)
     - Wachstum um ca. 1/8 in größer werdenen Perioden
-    - bei beiden Betriebssystemen gleich
 
     - Bezug auf Grundlagen
 - Zusammenhang Array + Liste
