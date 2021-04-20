@@ -20,9 +20,9 @@ array, = plt.plot(wiederholung, speicherveraenderung_array, label="Array")
 
 plt.margins(0)
 
-plt.title(sys.argv[1] + "\nSpeicherveränderung nach Anzahl der Wiederholungen")
-plt.xlabel("Anzahl der Wiederholungen")
-plt.ylabel("Speicherveränderung in Bytes pro Wiederholung")
+plt.title(sys.argv[1] + "\nSpeicherveränderung je hinzugefügtes Element")
+plt.xlabel("Hinzugefügtes Element")
+plt.ylabel("Speicherveränderung in Bytes")
 
 plt.subplots_adjust(left=0.15)
 

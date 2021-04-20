@@ -20,8 +20,8 @@ array, = plt.plot(wiederholung, gesamtlaufzeit_array, label="Array")
 
 plt.margins(0)
 
-plt.title(sys.argv[1] + "\nGesamtlaufzeit nach Anzahl der Wiederholungen")
-plt.xlabel("Anzahl der Wiederholungen")
+plt.title(sys.argv[1] + "\nGesamtlaufzeit nach Anzahl der Elementen")
+plt.xlabel("Hinzugefügte Elemente")
 plt.ylabel("Gesamtlaufzeit in Sekunden")
 
 plt.subplots_adjust(left=0.15)
