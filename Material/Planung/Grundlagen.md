@@ -31,10 +31,10 @@
 
 - Datenstruktur
 
-- Datentyp
+- Größen von verschiedenen Datentypen in Datenstrukturen
 
 - Liste (.append)
 
 - Array (.append)
 
-- System (OS, Hardware)
+- OS
