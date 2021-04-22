@@ -20,3 +20,8 @@ Speicherveränderung Windows Mittelwerte
 #### D6
 Speicherveränderung Windows Mittelwerte Array
 
+#### D7
+Speicherbelegung Windows Mittelwerte Liste 77840 Bytes ~E 9700
+
+#### D8
+Speicherveränderung Windows Mittelwerte Liste ~E9700
