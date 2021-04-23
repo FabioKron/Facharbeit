@@ -1,1 +1,1 @@
-Einzelne Werte haben extrem große Abweichungen, Median wäre hilfreich, ohne diese Abweichungen zu analysieren
+- Ähnliche Datenstrukturen gleicher Methodenname, gleiches Ergebnis, andere Funktionsweise -> Passend für andere Anwendungsfälle
