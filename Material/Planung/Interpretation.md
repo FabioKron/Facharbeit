@@ -1,5 +1,3 @@
-
-
 ## Speicher
 - Speicherverwaltung fest vorgegeben
     -> Keine Abweichungen
@@ -14,31 +12,26 @@
     - Liste wächst an, wenn Größe x kleiner als bei Array ist
     - Bezug auf Grundlagen
 
-## Laufzeit...
-- Laufzeitveränderung manchmal 0/ Verschiedene Level bei Laufzeitveränderung
-    -> Laufzeit zu klein zum präzisen Messen
-        -> Gründe Windows
-    -> Unklar ob Messwert Laufzeit oder Ungenauigkeiten der Messung abbildet
+## Laufzeit
+- Ungenauigkeiten 
+    - Laufzeitveränderung Liste manchmal 0/ Verschiedene Level bei Laufzeitveränderung (auch bei Array)
+        -> Laufzeit zu klein zum präzisen Messen
+            -> Gründe? // zum Schluss evt. (Vermerk machen)
+        -> Unklar ob Schwankungen von Laufzeit der Operation oder Ungenauigkeiten der Messung abbildet
 
-- komische Sprünge (Hintergrundprozesse; aber weniger als bei Windows)
+- komische Sprünge (Hintergrundprozesse?)
 
-- Messdaten genauer als bei Windows?
-    -> Deutlich mehr Messwerte bei Laufzeitveränderung, die > 0 sind
-    -> weniger komische Sprünge
-
-- Array benötigt deutlich mehr Laufzeit
-    -> Mehr Operationen durch Neuplatzierung
-
-- Bei Listen: Gerade durch Minimale Laufzeitänderung parallel zu X-Achse
+- Laufzeitwntwicklung bei Listen: Gerade durch Minimale Laufzeitänderung parallel zu X-Achse
     -> Laufzeitveränderung unabhängig von Anzahl der Elementen
 
-- Bei Array: Gerade durch Minimale Laufzeitänderung steigt ungefähr linear
+- Laufzeitwntwicklung bei Arrays: Gerade durch Minimale Laufzeitänderung steigt ungefähr linear
     -> Laufzeitveränderung proportional zu Anzahl der Elementen
     -> Exponentieller Anstieg der Gesamtlaufzeit
-        -> Undeutlich durch Ausnahmefälle
+        -> Undeutlich durch die extremen Ausnahmefälle
 
+- Array benötigt deutlich mehr Laufzeit
+    -> Aufwedigere Operationen durch Neuplatzierung
 
-
-- Bezug auf Speicher
-    - Zusammenhang?
+#### Bezug Laufzeit zu Speicher
+    - Zusammenhang? (Stichproben)
 
