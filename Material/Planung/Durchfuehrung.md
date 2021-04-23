@@ -6,15 +6,7 @@
     - 4096 MB Arbeitsspeicher
     - 1 CPU 
 
-    1. Windows 10 (Nov/2020)
-        - Interpreter: 
-            - cPython 3.8.8
-        - Acceleration: 
-            - VT-x/AMD-V
-            - Nested Paging
-            - Hyper-V Paravirtualization
-
-    2. Ubuntu 20.04.2.0
+    1. Ubuntu 20.04.2.0
         - Interpreter: 
             - cPython 3.8.5
         - Acceleration: 
@@ -31,5 +23,5 @@
 
 - float ( 0-1)
 
-- Durchführungen: 2 * 50 * 10000 (zum Verringern der Streuung)
+- Durchführungen: 1 * 50 * 10000 (zum Verringern der Streuung)
 - Mittelwert + Maximalabweichung
