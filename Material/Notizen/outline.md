@@ -12,13 +12,9 @@
 
 ## 3. Durchführung
 
-## 4. Ergebnisse
-    1. Windows
-    2. Ubuntu
+## 4. Ergebnisse + Interpretation
 
-## 5. Interpretation
-
-## 6. Fazit, etc...
+## 5. Fazit, etc...
 
 ## Anhang 
     - (Abbildungen + Quellen)
