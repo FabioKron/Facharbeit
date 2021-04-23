@@ -1,21 +1,21 @@
 ## Speicherbelegung
 
-#### D2
+#### D1
 belegter Speicher Ubuntu Mittelwerte
 
-#### D4
+#### D2
 belegter Speicher Ubuntu Maximalabweichung
 
 ## Speicherveränderung
 
-#### D5
-Speicherveränderung Ubuntu Mittelwerte
-
-#### D6
+#### D3
 Speicherveränderung Ubuntu Mittelwerte Array
 
-#### D7
+#### D4
+Speicherveränderung Ubuntu Mittelwerte
+
+#### D5
 Speicherbelegung Ubuntu Mittelwerte Liste 77840 Bytes ~E 9700
 
-#### D8
+#### D6
 Speicherveränderung Ubuntu Mittelwerte Liste ~E9700
