@@ -8,10 +8,7 @@
 
 - (Float -> Konstante Größe)
 
-- Einflüsse von außen:
-    - Os
-    - Hardware
-    - Interpreter/Compiler
+- Interpreter/Compiler/OS
 
 
 ## Planung
