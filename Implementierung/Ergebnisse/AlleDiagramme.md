@@ -1,13 +1,7 @@
 ## Speicherbelegung
 
-#### D1
-belegter Speicher Windows Mittelwerte
-
 #### D2
 belegter Speicher Ubuntu Mittelwerte
-
-#### D3
-belegter Speicher Windows Maximalabweichung
 
 #### D4
 belegter Speicher Ubuntu Maximalabweichung
@@ -15,13 +9,13 @@ belegter Speicher Ubuntu Maximalabweichung
 ## Speicherveränderung
 
 #### D5
-Speicherveränderung Windows Mittelwerte
+Speicherveränderung Ubuntu Mittelwerte
 
 #### D6
-Speicherveränderung Windows Mittelwerte Array
+Speicherveränderung Ubuntu Mittelwerte Array
 
 #### D7
-Speicherbelegung Windows Mittelwerte Liste 77840 Bytes ~E 9700
+Speicherbelegung Ubuntu Mittelwerte Liste 77840 Bytes ~E 9700
 
 #### D8
-Speicherveränderung Windows Mittelwerte Liste ~E9700
+Speicherveränderung Ubuntu Mittelwerte Liste ~E9700
