@@ -11,10 +11,8 @@
 
 - Speicher Liste
     - Wachstum um ca. 1/8 in größer werdenen Perioden
-
-    - Bezug auf Grundlagen
-- Zusammenhang Array + Liste
     - Liste wächst an, wenn Größe x kleiner als bei Array ist
+    - Bezug auf Grundlagen
 
 ## Laufzeit...
 - Laufzeitveränderung manchmal 0/ Verschiedene Level bei Laufzeitveränderung
