@@ -39,3 +39,9 @@ Laufzeitveränderung Mittelwerte Liste
 
 #### D12 
 Gesamtlaufzeit Mittelwerte Liste
+
+#### D 13
+Laufzeitveränderung Mittelwerte Array
+
+#### D 14
+Gesamtlaufzeit Mittelwerte gesamt (Array)
