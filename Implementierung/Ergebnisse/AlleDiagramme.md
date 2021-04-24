@@ -19,3 +19,17 @@ Speicherbelegung Ubuntu Mittelwerte Liste 77840 Bytes ~E 9700
 
 #### D6
 Speicherveränderung Ubuntu Mittelwerte Liste ~E9700
+
+## Laufzeit Ungenauigkeiten
+
+#### D7
+Laufzeitveränderung Messung1 Liste Ungenauigkeiten/manchmal 0
+
+#### D8
+Laufzeitveränderung Messung1 Array Ungenauigkeiten
+
+#### D9
+Laufzeitveränderung Messung1 Ausreiser nach oben
+
+#### D10
+Gesamtlaufzeit Messung1 Ausreiser nach oben
