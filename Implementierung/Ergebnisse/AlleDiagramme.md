@@ -29,10 +29,10 @@ Laufzeitveränderung Messung1 Liste Ungenauigkeiten/manchmal 0
 Laufzeitveränderung Messung1 Array Ungenauigkeiten
 
 #### D9
-Laufzeitveränderung Messung1 Ausreiser nach oben
+Laufzeitveränderung Messung1 Ausreißer nach oben
 
 #### D10
-Gesamtlaufzeit Messung1 Ausreiser nach oben
+Gesamtlaufzeit Messung1 Ausreißer nach oben
 
 #### D 11
 Laufzeitveränderung Mittelwerte Liste
