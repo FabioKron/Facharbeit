@@ -33,3 +33,9 @@ Laufzeitveränderung Messung1 Ausreiser nach oben
 
 #### D10
 Gesamtlaufzeit Messung1 Ausreiser nach oben
+
+#### D 11
+Laufzeitveränderung Mittelwerte Liste
+
+#### D12 
+Gesamtlaufzeit Mittelwerte Liste
