@@ -17,11 +17,11 @@
     - Laufzeitveränderung Liste manchmal 0/ Verschiedene Level bei Laufzeitveränderung (auch bei Array)
         - Laufzeit zu klein zum präzisen Messen
             - Gründe? // zum Schluss evt. (Vermerk machen)
-        - Unklar ob Schwankungen von Laufzeit der Operation oder Ungenauigkeiten der Messung abbildet
+        - Unklar ob Schwankungen von Laufzeit der Operation oder Ungenauigkeiten der Messung kommen
 
-- komische Sprünge (Hintergrundprozesse?)
+    - komische Sprünge (Hintergrundprozesse?)
 
-- Laufzeitwntwicklung bei Listen: Gerade durch Minimale Laufzeitänderung parallel zu X-Achse
+- Laufzeitentwicklung bei Listen: Gerade durch Minimale Laufzeitänderung parallel zu X-Achse
     - Laufzeitveränderung unabhängig von Anzahl der Elementen
 
 - Laufzeitwntwicklung bei Arrays: Gerade durch Minimale Laufzeitänderung steigt ungefähr linear
