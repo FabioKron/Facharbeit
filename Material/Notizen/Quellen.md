@@ -1,5 +1,9 @@
 # Quellen
 
+**[GIH1]**
+Why is numpy.append() so slow? https://github.com/numpy/numpy/issues/17090 26.4.2021 ; 18:56
+
+
 **[INF1]**
 Was tun Datenstrukturen? https://www.inf-schule.de/algorithmen/suchbaeume/datenstrukturen/was 26.4.2021 ; 8:55
 
