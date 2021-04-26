@@ -1,8 +1,5 @@
 # Quellen
 
-**[PYO1]** 
-What is Python? https://www.python.org/doc/essays/blurb/  26.4.2021 ; 8:19
-
 **[INF1]**
 Was tun Datenstrukturen? https://www.inf-schule.de/algorithmen/suchbaeume/datenstrukturen/was 26.4.2021 ; 8:55
 
@@ -11,3 +8,6 @@ Datenstrukturen https://www.inf-schule.de//programmierung/imperativeprogrammieru
 
 **[INF3]**
 Listen https://www.inf-schule.de/algorithmen/listen/datenstrukturliste/konzept_liste 26.4.2021 ; 9:32
+
+**[PYO1]** 
+What is Python? https://www.python.org/doc/essays/blurb/  26.4.2021 ; 8:19
