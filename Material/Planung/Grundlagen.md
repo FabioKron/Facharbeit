@@ -17,13 +17,7 @@
 ## Planung
 
 ### Programmiersprache 
-- Programmiersprache
-
-- Interpreter
-
 - Python
-
-- Python 3.8
 
 - Programmbibliothek
 
@@ -31,10 +25,8 @@
 
 - Datenstruktur
 
-- Datentyp
-
 - Liste (.append)
 
 - Array (.append)
 
-- System (OS, Hardware)
+- Datentyp
