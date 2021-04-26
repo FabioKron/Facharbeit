@@ -14,6 +14,10 @@ Listen https://www.inf-schule.de/algorithmen/listen/datenstrukturliste/konzept_l
 Exploring Python’s Implementation of List.append() in C https://lisantra.wordpress.com/2020/04/24/python-internals-list-append/ 26.4.2021 ; 9:51
 
 
+**[NPY1]**
+Array append Docs https://numpy.org/doc/stable/reference/generated/numpy.append.html#numpy.append 26.4.2021 ; 18:47
+
+
 **[PYO1]** 
 What is Python? https://www.python.org/doc/essays/blurb/  26.4.2021 ; 8:19
 
