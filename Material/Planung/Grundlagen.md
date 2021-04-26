@@ -19,8 +19,6 @@
 ### Programmiersprache 
 - Python
 
-- Programmbibliothek
-
 - Numpy
 
 - Datenstruktur
