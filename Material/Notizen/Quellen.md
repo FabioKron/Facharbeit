@@ -19,3 +19,6 @@ What is Python? https://www.python.org/doc/essays/blurb/  26.4.2021 ; 8:19
 
 **[PYO2]**
 How are lists implemented in CPython? https://docs.python.org/3/faq/design.html#how-are-lists-implemented 26.4.2021 ; 9:50
+
+**[PYO3]**
+Time Complexity List https://wiki.python.org/moin/TimeComplexity 26.4.2021 ; 9:56
