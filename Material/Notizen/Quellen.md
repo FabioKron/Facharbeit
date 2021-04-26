@@ -8,3 +8,6 @@ Was tun Datenstrukturen? https://www.inf-schule.de/algorithmen/suchbaeume/datens
 
 **[INF2]**
 Datenstrukturen https://www.inf-schule.de//programmierung/imperativeprogrammierung/konzepteimp/datenstrukturen/konzept_datenstrukturen 26.4.2021 ; 8:56
+
+**[INF3]**
+Listen https://www.inf-schule.de/algorithmen/listen/datenstrukturliste/konzept_liste 26.4.2021 ; 9:32
