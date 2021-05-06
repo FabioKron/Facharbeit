@@ -14,7 +14,7 @@ Datenstrukturen https://www.inf-schule.de//programmierung/imperativeprogrammieru
 Listen https://www.inf-schule.de/algorithmen/listen/datenstrukturliste/konzept_liste 26.4.2021 ; 9:32
 
 
-**[LIS1]**
+**[HTD1]**
 Exploring Python’s Implementation of List.append() in C https://lisantra.wordpress.com/2020/04/24/python-internals-list-append/ 26.4.2021 ; 9:51
 
 
